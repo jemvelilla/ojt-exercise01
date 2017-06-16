@@ -12,7 +12,7 @@ class Database {
 	private $bday;
 	private $gender;
 	//asldkjasldkajsdlkajsd laksjdlaksjda oiahwoidahw dalksdj lakwjdaiowjd kajsd
-	
+	//add comment here
 	//another 
 	function __construct() {
 		$this->servername = "localhost";
