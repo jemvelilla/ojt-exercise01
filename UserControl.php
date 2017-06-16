@@ -11,7 +11,9 @@ class Database {
 	private $email;
 	private $bday;
 	private $gender;
+	//asldkjasldkajsdlkajsd laksjdlaksjda oiahwoidahw dalksdj lakwjdaiowjd kajsd
 	
+	//another 
 	function __construct() {
 		$this->servername = "localhost";
 		$this->username = "root";
