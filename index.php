@@ -46,7 +46,7 @@
 		<!-- Wrapper for slides -->
 		<div class="carousel-inner" role="listbox">
 			<div class="item active">
-				<img src="users home.jpg" alt="Slide 1">
+				<img src="images/users home.jpg" alt="Slide 1">
 				<div class="carousel-caption">
 					<h3>Connect</h3>
 				</div>
@@ -54,28 +54,28 @@
 
 
 			<div class="item">
-				<img src="images01.jpeg" alt="Slide 2">
+				<img src="images/images01.jpeg" alt="Slide 2">
 				<div class="carousel-caption">
 					<h3>Interact</h3>
 				</div>
 			</div>
 
 			<div class="item">
-				<img src="images02.jpeg" alt="Slide 3">
+				<img src="images/images02.jpeg" alt="Slide 3">
 				<div class="carousel-caption">
 					<h3>Discover</h3>
 				</div>
 			</div>
 
 			<div class="item">
-				<img src="images03.jpeg" alt="Slide 4">
+				<img src="images/images03.jpeg" alt="Slide 4">
 				<div class="carousel-caption">
 					<h3>Socialize</h3>
 				</div>
 			</div>
 
 			<div class="item">
-				<img src="images04.jpeg" alt="Slide 5">
+				<img src="images/images04.jpeg" alt="Slide 5">
 				<div class="carousel-caption">
 					<h3>Have Fun</h3>
 				</div>
@@ -105,10 +105,10 @@
 				<table cellpadding="1" cellspacing="1">
 					<tr>
 						<td><input class="w3-input w3-border w3-round-xxlarge" type="text"
-							name="firstname" placeholder='Firstname' size="15" required></td>
+							name="firstname" placeholder='Firstname' maxlength="50" size="15" required></td>
 						<td>&nbsp;</td>
 						<td><input class="w3-input w3-border w3-round-xxlarge" type="text"
-							name="lastname" placeholder='Lastname' size="15" required></td>
+							name="lastname" placeholder='Lastname' maxlength="50" size="15" required></td>
 					</tr>
 				</table>
 				<br>
@@ -129,7 +129,7 @@
 				<table cellpadding="1" cellspacing="1">
 					<tr>
 						<td><input class="w3-input w3-border w3-round-xxlarge"
-							type="text" name="email" placeholder='Email Address' size="40" required></td>
+							type="email" name="email" placeholder='Email Address' size="40" required></td>
 					</tr>
 				</table>
 				<br>

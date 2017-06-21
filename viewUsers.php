@@ -43,20 +43,23 @@
             .navbar-default .navbar-toggle {
                 border-color: transparent;
             }
-            .sortButton {
+            .button {
 
-            background-color: Transparent;
-            background-repeat:no-repeat;
-            border: none;
-            cursor:pointer;
-            overflow: hidden;
-
+            	background-color: Transparent;
+            	background-repeat:no-repeat;
+            	border: none;
+            	cursor:pointer;
+            	color: white;
+				margin-top: 15px;
+				margin-right: 15px;
+				font-size: 12px;
             }
         </style>
     </head>
     <body>
- 
-       <nav class="navbar navbar-default navbar-fixed-top">
+ 		<nav class="navbar navbar-default navbar-fixed-top">
+		<form action="UserControl.php" method="post" style = "display:inline">
+			
 		<div class="container-fluid">
 			<div class="navbar-header">
 				<button type="button" class="navbar-toggle" data-toggle="collapse"
@@ -68,7 +71,8 @@
 			</div>
 			<div class="collapse navbar-collapse" id="myNavbar">
 				<ul class="nav navbar-nav navbar-right">
-					<li><a href="homepage.php">LOGOUT</a></li>
+					<li><button type='submit' name='logout' value='logout' class='button'> L O G O U T
+                    </button></li>
 				</ul>
 			</div>
 		</div>
@@ -78,7 +82,7 @@
    	 	<br><br>
    	 	<div class="w3-content w3-padding" style="max-width:1564px">
 
-            <form action="UserControl.php" method="post">
+            
                     
             <div class="w3-container w3-padding-32">
             
@@ -110,12 +114,12 @@
            			?>
               		     	
                         <tr>
-                            <td><input type="checkbox" name="todelete" value=<?php $row['id']?>></td>
+                            <td><input type="checkbox" name="todelete[]" value=<?php echo $row['id']?>></td>
                             <td><div class="radio"><center><?php print $row['Username'] ?></center></div></td>
                             <td><div class="radio"><center><?php print $row['Password'] ?></center></div></td>
                             <td><div class="radio"><center><?php print $row['Email']?> </center></div></td>
-                            <td><div class="radio"><center><?php print $row['First Name']?></center></div></td>
-                            <td><div class="radio"><center><?php print $row['Last Name']?></center></div></td>
+                            <td><div class="radio"><center><?php print $row['First_Name']?></center></div></td>
+                            <td><div class="radio"><center><?php print $row['Last_Name']?></center></div></td>
                             <td><div class="radio"><center><?php print $row['Birthdate']?></center></div></td>
                             <td><div class="radio"><center><?php print $row['Gender']?></center></div></td>
                         </tr>
@@ -126,14 +130,13 @@
                 
              
                 <div class="w3-row-padding w3-padding-32 w3-center" style="margin:0 -16px">
-                    <a href="addUsers.php">
-                    <button class="w3-button w3-green w3-round-xxlarge" type="submit" value="Update" name="update">
-                        <i class="fa fa-pencil"></i> ADD</a>
+                 
+                    <button class="w3-button w3-green w3-round-xxlarge" type="submit" value="Add" name="add">
+                        <i class="fa fa-pencil"></i> ADD
                     </button>
                     
-                    <a href="updateUsers.php">
                     <button class="w3-button w3-green w3-round-xxlarge" type="submit" value="Update" name="update">
-                        <i class="fa fa-pencil"></i> UPDATE</a>
+                        <i class="fa fa-pencil"></i> UPDATE
                     </button>
                     
                     <button class="w3-button w3-green w3-round-xxlarge" type="submit" value="Delete" name="delete">
@@ -145,12 +148,7 @@
             </form>
             <!-- End page content -->
         </div>
-
-        <script>
-            function myFunction() {
-                alert("Deleted");
-            }
-        </script>
+        
     </body>
 </html>
 
